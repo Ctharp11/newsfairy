@@ -24,6 +24,7 @@ $.ajax({
        var id = response.sources[i].id;
        var place = response.sources[i].name;
        $('.select').append('<option value=" '+ id + '" class="option">' + place + '</option>')
+       $('#sources').append("<div>" + place + "</div>")
     }    
 
     var e = document.getElementById('select-one'); 
