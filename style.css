@@ -1,0 +1,57 @@
+
+.jumbotron{
+    text-align: center;
+    font-family: chunkfive;
+    border-bottom: solid rgb(140,23,34);
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.main-section {
+    border: solid #999;
+    height: 500px;
+}
+
+.form {
+    display: inline;
+    margin: 15px auto;
+}
+
+.select{
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.select option {
+    padding: 10px;
+}
+
+.comments-section {
+    border: solid #999;
+    height: 300px;
+}
+
+.footer {
+    text-align: center;
+    border-top: solid rgb(140,23,34);
+}
+
+/* sticky footer */
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+  .footer,
+  .push {
+    height: 50px;
+  }
