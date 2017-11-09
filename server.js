@@ -1,21 +1,18 @@
 var mykey = apiKey;
-var inputOne;
-var inputTwo;
+var topicInput;
 var sourceId1;
 var sourceId2;
 // Getting user input
 
-var input = document.querySelectorAll('input');
-var button = document.getElementsByClassName('input-button');
+var input = document.querySelector('input');
+var button = document.getElementById('input-button');
 
-// for loop to iterate through both input input boxes, grab value, and send to global scope.
-for(var i = 0; i < button.length; i++) {
-    button[i].addEventListener('click', function(event){
-        event.preventDefault();
-            inputOne = input[0].value;
-            inputTwo = input[1].value;
-    });
-}
+
+// Grabs value of input (optional topic) and assigns to global scope
+button.addEventListener("click", function(){
+    event.preventDefault();
+    topicInput = input.value;
+})
 
 // AJAX request for API to put data into drop down. Selected new source passed into right or left functions
 var sourceUrl = 'https://newsapi.org/v1/sources';

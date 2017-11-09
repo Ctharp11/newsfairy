@@ -9,28 +9,34 @@
     text-align: center;
 }
 
+.georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .main-section {
     border: solid #999;
     height: 500px;
 }
 
-.form {
-    display: inline;
-    margin: 15px auto;
+.small-container{
+    margin: 40px;
 }
 
-.select{
-    padding: 10px;
-    font-family: sans-serif;
+.top-row-checkbox{
+    margin-bottom: 20px;
 }
 
-.select option {
-    padding: 10px;
+.and {
+    text-align: center;
 }
 
-.comments-section {
-    border: solid #999;
-    height: 300px;
+.user-input {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.results {
+    margin: 40px;
 }
 
 .footer {
