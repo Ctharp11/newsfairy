@@ -15,7 +15,7 @@
 
 .main-section {
     border: solid #999;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .small-container{
@@ -31,12 +31,16 @@
 }
 
 .user-input {
-    width: 40%;
+    /* width: 40%; */
     margin-bottom: 20px;
 }
 
 .results {
     margin: 40px;
+}
+
+.img-dynamic img{
+    width: 50%;
 }
 
 .footer {
