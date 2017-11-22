@@ -1,0 +1,24 @@
+{
+  "name": "news-bias",
+  "version": "1.0.0",
+  "description": "Find biases in news",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ctharp11/newsfairy.git"
+  },
+  "author": "Cameron Tharp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ctharp11/newsfairy/issues"
+  },
+  "homepage": "https://github.com/Ctharp11/newsfairy#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mysql": "^2.15.0"
+  }
+}

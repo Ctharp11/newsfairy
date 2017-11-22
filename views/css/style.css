@@ -22,6 +22,14 @@
     margin: 40px;
 }
 
+#input-button {
+    border: solid rgb(140,23,34);
+}
+
+#reset {
+    border: solid rgb(140,23,34);
+}
+
 .top-row-checkbox{
     margin-bottom: 20px;
 }

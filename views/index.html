@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>News Bias</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
                     <div class="col-md-4">
                         <form class="form " action="">
                             <select class="select form-control" id="select-one"  value="News Sources"> 
-                                <option> Choose your news source</option>
+                                <option value="option"> Choose your news source</option>
                             </select>
                         </form>
                     </div>
@@ -43,7 +43,7 @@
                     <div class="col-md-4">
                         <form class="form" action="">
                             <select class="select form-control" id="select-two"  value="News Sources"> 
-                                <option> Choose your news source</option>
+                                <option value="option"> Choose your news source</option>
                             </select>
                         </form>
                     </div>
@@ -53,14 +53,13 @@
                     <div class="col-md-2">
                         <h5>TOPIC (optional)</h5> 
                     </div>
-                    <div class="col-md-4">
-                        <input class="user-input form-control" type="text">
-                        <button type="button" id="input-button" class="btn">Submit</button>
+                    <div class="col-md-5">
+                        <input id="topic-input" class="user-input form-control" type="text">
+                        <div type="submit" id="input-button" class="btn">Submit</div>
+                        <div id="reset" class="btn">Reset</div>
                     </div>
-                    <div class="col-md-2">
-                        <button id="reset" class="btn btn-sm">Reset</button>
-                    </div>
-                    <div class="col-md-4">
+                    
+                    <div class="col-md-5">
 
                     </div>
                 </div>
@@ -71,43 +70,12 @@
                 </div>
 
                 <div id="second" class="col-md-6">
-                        second
                 </div>
             </div>
         </div>
-            <!-- <div class="col-md-6">
-                <form class="form" action="">
-                    <select class="select" id="select-one"  value="News Sources"> 
-                        <option> Choose your news source</option>
-                    </select>
-                    <input class="user-input" placeholder="Topic (optional)" type="text">
-                    <button class="input-button">Submit</button>
-                </form>
-            </div> -->
-        
-            <!-- <div class="col-md-6">
-                <form class="form" action="">
-                    <select class="select" id="select-two" value="News Sources"> 
-                        <option> Choose your news source</option>
-                    </select>  
-                    <input class="user-input" placeholder="Topic (optional)" type="text">
-                    <button class="input-button">Submit</button>
-                </form>
-            </div> -->
-        
-        <!-- <iframe src="http://www.breitbart.com/big-government/2017/11/08/donald-trump-congratulates-all-of-the-deplorables-on-one-year-anniversary-of-election-victory/"
-        width="100%" height="500" frameborder="0"
-        allowfullscreen sandbox>
-  <p> <a href="https://developer.mozilla.org/en-US/docs/Glossary">
-    Fallback link for browsers that don't support iframes
-  </a> </p>
-</iframe> -->
-                
-        <!-- <div class="row comments-section">
-            <div class="col-md-12">
-                Comments section
-            </div>
-        </div> -->
+           
+        <!-- Maybe maket socket.io comments place -->
+
     <div class="push"></div>
     </section>
 
@@ -120,7 +88,7 @@
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
-    <script src="keys.js"></script>
-    <script src="server.js"></script>
+    <script src="js/keys.js"></script>
+    <script src="js/ajax.js"></script>
 </body>
 </html>
