@@ -8,7 +8,7 @@ var news = require('./models/news')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + "views"));
+// app.use(express.static(__dirname + "views"));
 
 var routes = require('./controllers/routes.js');
 
