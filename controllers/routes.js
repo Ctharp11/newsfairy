@@ -1,12 +1,11 @@
 var express = require('express');
 var app = express();
-var routes = express.Router();
+var router = express.Router();
+var news = require('../models/news.js');
 
-app.get('/', function(req, res){
-    app.send('asdasd');
-    console.log('test');
+var path = require('path');
+
+router.get('/', function(req, res){
+    res.sendFile(path.join(__dirname, '/views/index.html'));
 })
-
-
-
-module.exports = routes;
+module.exports = router;
