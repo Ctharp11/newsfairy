@@ -16,18 +16,20 @@ app.get('/all', function(req, res) {
 })
 
 app.post('/posts', function(req, res){
-    var posts = req.body;
-    console.log('posts', posts);
-    connection.query("INSERT INTO search (news_source, topic, date) VALUES ('other', 'posts', NOW())");
+    var news = req.body;
+    var postOne = news.sourceOne;
+    var postTwo = news.sourceTwo;
+    var topic = news.topic;
+    connection.query("INSERT INTO search (topic, news_source, news_sourcetwo, date) VALUES ('" + topic + "','" + postOne + "', '" + postTwo + "', NOW())");
 
 })
 
-app.post('/topic', function(req, res){
-    var topicObj = req.body
-    var topic = topicObj.topic;
-    console.log("topic", topic);
-    connection.query("INSERT INTO search (topic, date) VALUES ('"+topic+"', NOW())");
-})
+// app.post('/posts', function(req, res){
+//     var topicObj = req.body
+//     var topic = topicObj.topic;
+//     console.log("topic", topic);
+//     connection.query("INSERT INTO search (topic, date) VALUES ('"+topic+"', NOW())");
+// })
 
 }
 

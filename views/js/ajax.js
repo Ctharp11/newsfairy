@@ -1,21 +1,15 @@
 $('#input-button').on('click', function(){
     var topic = $("#topic-input").val();
-    var sourceOne = $("#select-one").val();
-    var sourceTwo = $("#select-two").val();
+    var sourceOne = $("#select-one").val().trim();
+    var sourceTwo = $("#select-two").val().trim();
 
-    var sources = {
+    var news = {
+        topic: topic,
         sourceOne: sourceOne,
         sourceTwo: sourceTwo
     }
 
-    var topics = {
-        topic: topic
-    }
-    // console.log(sources);
-    // console.log(topics);
-
-    $.post('/topic', topics);
+    $.post('/posts', news);
     
-    $.post('/posts', sources);
 })
 
