@@ -31,7 +31,7 @@
                         <h4>COMPARE</h4>
                     </div>
                     <div class="col-md-4">
-                        <form class="form " action="">
+                        <form>
                             <select class="select form-control" id="select-one"  value="News Sources"> 
                                 <option value="option"> Choose your news source</option>
                             </select>
@@ -41,7 +41,7 @@
                             <h4>and</h4>
                         </div>
                     <div class="col-md-4">
-                        <form class="form" action="">
+                        <form>
                             <select class="select form-control" id="select-two"  value="News Sources"> 
                                 <option value="option"> Choose your news source</option>
                             </select>
@@ -54,7 +54,9 @@
                         <h5>TOPIC (optional)</h5> 
                     </div>
                     <div class="col-md-5">
-                        <input id="topic-input" class="user-input form-control" type="text">
+                        <form>
+                          <input id="topic-input" class="user-input form-control" type="text">
+                        </form>
                         <div type="submit" id="input-button" class="btn">Submit</div>
                         <div id="reset" class="btn">Reset</div>
                     </div>
@@ -89,6 +91,7 @@
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
     <script src="js/keys.js"></script>
+    <script src="js/api.js"></script>
     <script src="js/ajax.js"></script>
 </body>
 </html>

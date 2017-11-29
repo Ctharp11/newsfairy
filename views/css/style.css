@@ -47,8 +47,8 @@
     margin: 40px;
 }
 
-.img-dynamic img{
-    width: 50%;
+.img-dynamic {
+    width: 20em;
 }
 
 .footer {
